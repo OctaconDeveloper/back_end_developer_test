@@ -19,7 +19,7 @@ const getEventsByActor = async (req, res) => {
     } else {
       const response = await getAll(query);
       responseBag(res, true, 200, response);
-    }
+    } 
   } catch (e) {
     responseBag(res, false, 500, JSON.stringify(e.message ? e.message : e));
   }
